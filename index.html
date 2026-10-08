@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe LP Skyone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#0517ED}a:hover{color:#000B62}
+select,input{font-family:inherit}
+</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, sans-serif; color: #212121; background: #FFFFFF; min-height: 100vh;">
+
+  <header style="border-bottom: 1px solid #E4E4E7; background: #FFFFFF;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;">
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <div style="width: 112px; height: 26px; border-radius: 4px; background: #E4E4E7; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; color: #52525B;">logo Skyone</div>
+        <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.12em; color: #52525B;">WIREFRAME · ESTRUTURA PROPOSTA</span>
+      </div>
+      <a href="#form" style="text-decoration: none; background: #0517ED; color: #FFFFFF; padding: 12px 20px; border-radius: 999px; font-size: 14px; font-weight: 600;">Falar com o time</a>
+    </div>
+  </header>
+
+  <section style="background: #000B62; color: #FFFFFF;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 64px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <span style="align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; background: #4FAFF8; color: #000B62; padding: 6px 10px; border-radius: 999px;">01 · FORMULÁRIO NO TOPO + PROMESSA FORTE</span>
+        <h1 style="margin: 0; font-size: 52px; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em;">Reduza [X], [Y] e [Z]</h1>
+        <p style="margin: 0; font-size: 18px; line-height: 1.5; color: #C9D6F2; max-width: 480px;">[Promessa forte em uma linha: o resultado que a empresa terá]</p>
+        <div style="display: flex; flex-direction: column; gap: 8px; max-width: 420px;">
+          <div style="height: 10px; border-radius: 5px; background: #13239C;"></div>
+          <div style="height: 10px; width: 72%; border-radius: 5px; background: #13239C;"></div>
+        </div>
+      </div>
+
+      <div id="form" style="background: #FFFFFF; color: #212121; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 12px 40px rgba(0,0,0,0.25);">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #52525B;">ETAPA <span id="stepnum">1</span> DE 2</span>
+          <div class="s2" style="display:none">
+            <button type="button" onclick="go(1)" style="border: none; background: none; color: #0517ED; font-size: 13px; font-weight: 600; cursor: pointer; padding: 8px 0;">← Voltar</button>
+          </div>
+        </div>
+        <div style="height: 6px; border-radius: 3px; background: #E4E4E7; overflow: hidden;">
+          <div id="bar" style="height: 6px; width: 50%; background: #0517ED;"></div>
+        </div>
+
+        <div class="s1">
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <h2 style="margin: 0; font-size: 20px; font-weight: 700; color: #000B62;">[Headline da oferta]</h2>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600;">Faturamento anual da empresa
+              <select style="height: 44px; border: 1px solid #D4D4D8; border-radius: 8px; padding: 0 12px; font-size: 14px; background: #FFFFFF; color: #3F3F46;">
+                <option>Selecione a faixa</option><option>Até R$ 10M</option><option>R$ 10M a R$ 100M</option><option>R$ 100M a R$ 500M</option><option>Acima de R$ 500M</option>
+              </select>
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600;">Estado da sede
+              <select style="height: 44px; border: 1px solid #D4D4D8; border-radius: 8px; padding: 0 12px; font-size: 14px; background: #FFFFFF; color: #3F3F46;">
+                <option>Selecione o estado</option>
+              </select>
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600;">Seu cargo
+              <select style="height: 44px; border: 1px solid #D4D4D8; border-radius: 8px; padding: 0 12px; font-size: 14px; background: #FFFFFF; color: #3F3F46;">
+                <option>Selecione o nível</option><option>C-level</option><option>Diretor(a)</option><option>Gerente</option><option>Coordenador(a)</option><option>Analista</option><option>Outro</option>
+              </select>
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600;">Principal desafio hoje
+              <select style="height: 44px; border: 1px solid #D4D4D8; border-radius: 8px; padding: 0 12px; font-size: 14px; background: #FFFFFF; color: #3F3F46;">
+                <option>Selecione o desafio</option><option>Segurança</option><option>Cloud e migração</option><option>Dados e IA</option><option>Custo de nuvem (FinOps)</option>
+              </select>
+            </label>
+            <button type="button" onclick="go(2)" style="height: 48px; border: none; border-radius: 999px; background: #0517ED; color: #FFFFFF; font-size: 15px; font-weight: 700; cursor: pointer;">Continuar →</button>
+          </div>
+        </div>
+
+        <div class="s2" style="display:none">
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <h2 style="margin: 0; font-size: 20px; font-weight: 700; color: #000B62;">[Título da etapa 2]</h2>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600;">Nome
+              <input type="text" placeholder="Nome e sobrenome" style="height: 44px; border: 1px solid #D4D4D8; border-radius: 8px; padding: 0 12px; font-size: 14px;">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600;">E-mail corporativo
+              <input type="email" placeholder="nome@empresa.com.br" style="height: 44px; border: 1px solid #D4D4D8; border-radius: 8px; padding: 0 12px; font-size: 14px;">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600;">Empresa
+              <input type="text" placeholder="Nome da empresa" style="height: 44px; border: 1px solid #D4D4D8; border-radius: 8px; padding: 0 12px; font-size: 14px;">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600;">WhatsApp
+              <input type="tel" placeholder="(11) 9 0000-0000" style="height: 44px; border: 1px solid #D4D4D8; border-radius: 8px; padding: 0 12px; font-size: 14px;">
+            </label>
+            <label style="display: flex; gap: 10px; align-items: center; font-size: 12px; color: #52525B;">
+              <input type="checkbox" style="width: 18px; height: 18px;">Concordo com a Política de Privacidade (LGPD)
+            </label>
+            <button type="button" style="height: 48px; border: none; border-radius: 999px; background: #F88E14; color: #000B62; font-size: 15px; font-weight: 700; cursor: pointer;">Falar com um especialista</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 64px 24px; display: flex; flex-direction: column; gap: 20px;">
+    <span style="align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; background: #EFF9FF; color: #0517ED; padding: 6px 10px; border-radius: 999px;">02 · ENTREGA, HISTÓRIA E CLIENTES ATENDIDOS</span>
+    <h2 style="margin: 0; font-size: 32px; font-weight: 800; color: #000B62;">+[nº] clientes atendidos</h2>
+    <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #52525B; max-width: 720px;">[Breve resumo sobre a entrega e a história da Skyone]</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+      <a href="#form" style="text-decoration: none; background: #0517ED; color: #FFFFFF; padding: 13px 22px; border-radius: 999px; font-size: 14px; font-weight: 600;">Falar com o time</a>
+      <a href="#cases" style="text-decoration: none; border: 1.5px solid #0517ED; color: #0517ED; padding: 12px 22px; border-radius: 999px; font-size: 14px; font-weight: 600;">Ver cases</a>
+      <a href="#fluxo" style="text-decoration: none; border: 1.5px solid #0517ED; color: #0517ED; padding: 12px 22px; border-radius: 999px; font-size: 14px; font-weight: 600;">Como funciona a implantação/operação</a>
+    </div>
+  </section>
+
+  <section style="background: #EFF9FF;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+      <span style="align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; background: #FFFFFF; color: #0517ED; padding: 6px 10px; border-radius: 999px;">03 · BIG NUMBERS DOS CLIENTES</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-size: 44px; font-weight: 800; color: #0517ED;">+[X]M</span>
+          <span style="font-size: 15px; color: #3F3F46;">reduziram [Y] em menos de [X]</span>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-size: 44px; font-weight: 800; color: #0517ED;">+[X]M</span>
+          <span style="font-size: 15px; color: #3F3F46;">escalaram em menos de [X]</span>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-size: 44px; font-weight: 800; color: #0517ED;">[X]%</span>
+          <span style="font-size: 15px; color: #3F3F46;">[outro resultado de clientes]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 20px;">
+    <span style="align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; background: #EFF9FF; color: #0517ED; padding: 6px 10px; border-radius: 999px;">04 · MARCAS QUE CONFIAM NA SKYONE</span>
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <button type="button" aria-label="Logos anteriores" style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 999px; border: 1px solid #D4D4D8; background: #FFFFFF; color: #52525B; font-size: 18px;">‹</button>
+      <div style="flex: 1 1 auto; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px;">
+        <div style="height: 64px; border-radius: 10px; background: #F4F4F5; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #71717A;">logo</div>
+        <div style="height: 64px; border-radius: 10px; background: #F4F4F5; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #71717A;">logo</div>
+        <div style="height: 64px; border-radius: 10px; background: #F4F4F5; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #71717A;">logo</div>
+        <div style="height: 64px; border-radius: 10px; background: #F4F4F5; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #71717A;">logo</div>
+        <div style="height: 64px; border-radius: 10px; background: #F4F4F5; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #71717A;">logo</div>
+      </div>
+      <button type="button" aria-label="Próximos logos" style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 999px; border: 1px solid #D4D4D8; background: #FFFFFF; color: #52525B; font-size: 18px;">›</button>
+    </div>
+  </section>
+
+  <section id="cases" style="background: #F4F4F5;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+      <span style="align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; background: #FFFFFF; color: #0517ED; padding: 6px 10px; border-radius: 999px;">05 · CASES EM VÍDEO</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <div style="aspect-ratio: 16 / 9; border-radius: 14px; background: #000B62; display: flex; align-items: center; justify-content: center;">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M10 8l6 4-6 4z" fill="#FFFFFF"></path></svg>
+        </div>
+        <div style="aspect-ratio: 16 / 9; border-radius: 14px; background: #000B62; display: flex; align-items: center; justify-content: center;">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M10 8l6 4-6 4z" fill="#FFFFFF"></path></svg>
+        </div>
+        <div style="aspect-ratio: 16 / 9; border-radius: 14px; background: #000B62; display: flex; align-items: center; justify-content: center;">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M10 8l6 4-6 4z" fill="#FFFFFF"></path></svg>
+        </div>
+      </div>
+      <a href="#form" style="align-self: center; text-decoration: none; background: #0517ED; color: #FFFFFF; padding: 15px 28px; border-radius: 999px; font-size: 15px; font-weight: 700;">Quero começar a reduzir [X], [Y], [Z]</a>
+    </div>
+  </section>
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+    <span style="align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; background: #EFF9FF; color: #0517ED; padding: 6px 10px; border-radius: 999px;">06 · O QUE VAMOS TE ENTREGAR</span>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+      <div style="border: 1px solid #E4E4E7; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: #EFF9FF;"></div>
+        <strong style="font-size: 17px; color: #000B62;">[Entrega 1]</strong>
+        <span style="font-size: 14px; line-height: 1.5; color: #52525B;">[Descrição curta da entrega]</span>
+      </div>
+      <div style="border: 1px solid #E4E4E7; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: #EFF9FF;"></div>
+        <strong style="font-size: 17px; color: #000B62;">[Entrega 2]</strong>
+        <span style="font-size: 14px; line-height: 1.5; color: #52525B;">[Descrição curta da entrega]</span>
+      </div>
+      <div style="border: 1px solid #E4E4E7; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: #EFF9FF;"></div>
+        <strong style="font-size: 17px; color: #000B62;">[Entrega 3]</strong>
+        <span style="font-size: 14px; line-height: 1.5; color: #52525B;">[Descrição curta da entrega]</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="fluxo" style="background: #EFF9FF;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 28px;">
+      <span style="align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; background: #FFFFFF; color: #0517ED; padding: 6px 10px; border-radius: 999px;">07 · FLUXO MACRO DA ENTREGA</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <span style="width: 44px; height: 44px; border-radius: 999px; background: #000B62; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700;">1</span>
+          <strong style="font-size: 16px; color: #000B62;">[Etapa 1]</strong>
+          <span style="font-size: 14px; color: #52525B;">[O que acontece]</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <span style="width: 44px; height: 44px; border-radius: 999px; background: #000B62; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700;">2</span>
+          <strong style="font-size: 16px; color: #000B62;">[Etapa 2]</strong>
+          <span style="font-size: 14px; color: #52525B;">[O que acontece]</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <span style="width: 44px; height: 44px; border-radius: 999px; background: #000B62; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700;">3</span>
+          <strong style="font-size: 16px; color: #000B62;">[Etapa 3]</strong>
+          <span style="font-size: 14px; color: #52525B;">[O que acontece]</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <span style="width: 44px; height: 44px; border-radius: 999px; background: #000B62; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700;">4</span>
+          <strong style="font-size: 16px; color: #000B62;">[Etapa 4]</strong>
+          <span style="font-size: 14px; color: #52525B;">[O que acontece]</span>
+        </div>
+      </div>
+      <a href="#form" style="align-self: flex-start; text-decoration: none; background: #0517ED; color: #FFFFFF; padding: 13px 22px; border-radius: 999px; font-size: 14px; font-weight: 600;">Falar com o time</a>
+    </div>
+  </section>
+
+  <section style="background: #000B62; color: #FFFFFF;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center;">
+      <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.12em; background: #4FAFF8; color: #000B62; padding: 6px 10px; border-radius: 999px;">08 · FRASE-CHAVE QUE QUEBRA O SENSO COMUM</span>
+      <p style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 800; max-width: 820px;">Com a Skyone você [X], [Y], [Z]</p>
+    </div>
+  </section>
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 64px 24px; display: flex; flex-direction: column; gap: 24px;">
+    <span style="align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; background: #EFF9FF; color: #0517ED; padding: 6px 10px; border-radius: 999px;">09 · FECHAMENTO COM PRINTS DE CLIENTES</span>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+      <div style="height: 220px; border-radius: 14px; border: 1px dashed #A1A1AA; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #71717A;">[print WhatsApp]</div>
+      <div style="height: 220px; border-radius: 14px; border: 1px dashed #A1A1AA; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #71717A;">[print Instagram]</div>
+      <div style="height: 220px; border-radius: 14px; border: 1px dashed #A1A1AA; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #71717A;">[print WhatsApp]</div>
+      <div style="height: 220px; border-radius: 14px; border: 1px dashed #A1A1AA; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #71717A;">[print Instagram]</div>
+    </div>
+    <a href="#form" style="align-self: center; text-decoration: none; background: #F88E14; color: #000B62; padding: 16px 30px; border-radius: 999px; font-size: 16px; font-weight: 800;">Quero conversar agora</a>
+  </section>
+
+  <footer style="border-top: 1px solid #E4E4E7;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 24px; font-size: 12px; color: #52525B;">Wireframe · Case técnico Skyone · Sulamita Souza</div>
+  </footer>
+</div>
+
+<script>
+function go(n){
+  document.querySelectorAll('.s1').forEach(function(e){e.style.display = n===1 ? '' : 'none';});
+  document.querySelectorAll('.s2').forEach(function(e){e.style.display = n===2 ? '' : 'none';});
+  document.getElementById('stepnum').textContent = n;
+  document.getElementById('bar').style.width = n===1 ? '50%' : '100%';
+}
+</script>
+</body></html>
